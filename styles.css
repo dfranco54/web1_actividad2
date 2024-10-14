@@ -1,0 +1,260 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2e9f0;
+    color: #333;
+}
+
+nav {
+    background: #004680;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background:  url('banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.texto-destacado {
+    color: #2978df;
+    padding: 10px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #ece7e2af;
+    border-radius: 25px;
+    border: solid;
+    border-color: #ece7e2de;
+}
+
+.sub-texto-destacado {
+    color: #2978df;
+    background-color: #ece7e2af;
+    padding: 5px;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border: solid;
+    border-color: #ece7e2de;
+}
+
+footer {
+    background: #004680;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: auto;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #004680;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #4194d8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: #004680;
+    color: white;
+}
+
+#destinos-populares, #ofertas-especiales, #testimonios-clientes, #destino {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: start;
+    text-align: center;
+    justify-content: center;
+    background-color: #d9dee086;
+    border-radius: 25px;
+}
+
+
+.destino, .testimonio {
+    text-align: center;
+    width: 30em;
+    margin: 10px;
+    height: 100%;
+    background-color: #a7c7f19a;
+    border-radius: 25px;
+}
+
+.destino img, .testimonio img {
+    max-width: 100%;
+    width: 30em;
+    height: auto;
+    border-radius: 8px;
+}
+
+.destino p, .testimonio p {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+#ofertas-especiales{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#ofertas-especiales img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    form input {
+        padding: 6px;
+    }
+
+    form button {
+        padding: 8px 16px;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    #destinos-populares h2, #ofertas-especiales h2, #testimonios-clientes h2 {
+        font-size: 1.5em;
+    }
+
+    .sub-texto-destacado, .texto-destacado{
+        background-color: rgba(240, 248, 255, 0.486);
+        border: none;
+        margin: auto;
+    }
+
+    #destinos-populares, #ofertas-especiales, #testimonios-clientes, #destino {
+        flex-direction: column;
+    }
+
+    .destino, .testimonio {
+        width: auto;
+    }
+
+    #ofertas-especiales{
+        margin-top: 2em;
+    }
+
+    .destino p, .testimonio p{
+        display: none;
+    }
+}
